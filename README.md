@@ -1,4 +1,4 @@
-#Hybrid Mobile App Development
+# Hybrid Mobile App Development
 
 ### Integrantes do Grupo
 - Gustavo Guarnieri de Melo...........RM: 97100
