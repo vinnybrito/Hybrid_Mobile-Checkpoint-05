@@ -1,3 +1,25 @@
 <resources>
     <string name="app_name">Checkpoint 05_Hybrid_Mobile</string>
+
+    <!-- Activity Main -->
+    <string name="btn_bmi_activity">Calculate Your BMI</string>
+    <string name="btn_even_or_odd_activity">Even or Odd</string>
+    <string name="btn_rock_paper_scissors">Rock, Paper, Scissors</string>
+
+    <!-- Activity BMI Calculate -->
+    <string name="image_description">Balance BMI image</string>
+    <string name="title_bmi">Calculate your BMI</string>
+    <string name="description_bmi">Enter the &quot;.&quot; for decimal places</string>
+    <string name="input_weight">Enter your weight</string>
+    <string name="input_height">Enter your height</string>
+    <string name="btn_calculate">CALCULATE</string>
+
+    <!-- Activity BMI Result -->
+    <string name="txv_weight_information">Peso informado %s kg</string>
+    <string name="txv_height_information">Altura informada %s m</string>
+    <string name="txv_title_result">Resultado</string>
+    <string name="txv_result">Resultado</string>
+
+    <!-- Global Strings -->
+    <string name="return_home">RETURN TO HOME</string>
 </resources>
