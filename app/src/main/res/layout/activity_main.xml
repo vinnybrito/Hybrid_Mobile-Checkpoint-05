@@ -15,32 +15,10 @@
         android:layout_marginTop="30dp"
         android:background="@drawable/btn_background"
         android:text="Calculate Your BMI"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/btn_even_or_odd_activity"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="20dp"
-        android:layout_marginTop="30dp"
-        android:background="@drawable/btn_background"
-        android:text="Even or Odd"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/btn_bmi_activity" />
-
-    <Button
-        android:id="@+id/btn_rock_paper_scissors"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="20dp"
-        android:layout_marginTop="30dp"
-        android:background="@drawable/btn_background"
-        android:text="Game: Rock, Paper, Scissors"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/btn_even_or_odd_activity" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

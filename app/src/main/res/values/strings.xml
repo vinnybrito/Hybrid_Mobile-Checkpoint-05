@@ -15,10 +15,15 @@
     <string name="btn_calculate">CALCULATE</string>
 
     <!-- Activity BMI Result -->
-    <string name="txv_weight_information">Peso informado %s kg</string>
-    <string name="txv_height_information">Altura informada %s m</string>
+    <string name="txv_weight_information">Seu Peso %1$s kg</string>
+    <string name="txv_height_information">Altura informada %1$s m</string>
     <string name="txv_title_result">Resultado</string>
     <string name="txv_result">Resultado</string>
+
+    <!-- Activity Result -->
+    <string name="bmi_below_weight">Abaixo do peso</string>
+    <string name="bmi_ideal_weight">Peso Ideal</string>
+    <string name="bmi_above_weight">Acima do peso</string>
 
     <!-- Global Strings -->
     <string name="return_home">RETURN TO HOME</string>

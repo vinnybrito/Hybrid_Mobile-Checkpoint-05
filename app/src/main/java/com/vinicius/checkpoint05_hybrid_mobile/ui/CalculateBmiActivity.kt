@@ -1,4 +1,4 @@
-package com.vinicius.checkpoint05_hybrid_mobile.ui.calculateimc
+package com.vinicius.checkpoint05_hybrid_mobile.ui
 
 import android.content.Intent
 import android.os.Bundle
@@ -13,14 +13,12 @@ class CalculateBmiActivity: AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityBmiCalculateBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
         setupListener()
-
     }
 
     private fun setupListener() {
         binding.btnCalculateBmi.setOnClickListener {
-            val intent = Intent(this, ResultBmiActivity::class.java)
+            val intent = Intent(this, BmiResultActivity::class.java)
             val weight = binding.editWeight.text.toString()
             val height = binding.editHeight.text.toString()
 
