@@ -4,7 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.vinicius.checkpoint05_hybrid_mobile.databinding.ActivityMainBinding
-import com.vinicius.checkpoint05_hybrid_mobile.ui.CalculateBmiActivity
+import com.vinicius.checkpoint05_hybrid_mobile.bmi.CalculateBmiActivity
 
 class MainActivity : AppCompatActivity() {
 

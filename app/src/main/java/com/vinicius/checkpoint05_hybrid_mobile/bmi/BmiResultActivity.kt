@@ -1,4 +1,4 @@
-package com.vinicius.checkpoint05_hybrid_mobile.ui
+package com.vinicius.checkpoint05_hybrid_mobile.bmi
 
 import android.content.Intent
 import android.os.Bundle
@@ -59,6 +59,11 @@ class BmiResultActivity: AppCompatActivity() {
             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_NEW_TASK)
             startActivity( intent )
             finish()
+        }
+        binding.btnOpenFragment.setOnClickListener {
+            supportFragmentManager.beginTransaction()
+                .replace(R.id.fragment_container, EvenOrOddFragment()) // Substituir R.id.fragment_container pelo ID do contêiner do fragmento
+                .commit()
         }
     }
 }
