@@ -27,29 +27,31 @@ class BmiResultActivity: AppCompatActivity() {
 
             binding.txvWeightInformation.text = getString(
                 R.string.txv_weight_information,
-                String.format("%.1f", weight)
+                String.format("%.1f", weight),
+                String.format("%.2f", height)
             )
-            binding.txvHeightInformation.text = getString(
-                R.string.txv_height_information,
-                String.format("%.1f", height)
-            )
-
             calculateBmi(weight, height)
         }
     }
 
     private fun calculateBmi(weight: Double, height: Double) {
-        val bmi = weight / (height * height)
+        val bmi = weight / ( height * height )
 
-        if (bmi < 20) {
-            binding.txvResult.setText(R.string.bmi_below_weight)
-            binding.txvResult.setTextColor(ContextCompat.getColor(this, R.color.blue))
-        } else if (bmi < 25) {
+        if (bmi < 18.5) {
+            binding.txvResult.setText(R.string.bmi_under_weight)
+            binding.txvResult.setTextColor(ContextCompat.getColor(this, R.color.under_weight))
+        } else if (bmi < 24.9) {
             binding.txvResult.setText(R.string.bmi_ideal_weight)
-            binding.txvResult.setTextColor(ContextCompat.getColor(this, R.color.green))
+            binding.txvResult.setTextColor(ContextCompat.getColor(this, R.color.ideal_weight))
+        } else if(bmi < 29.9) {
+            binding.txvResult.setText(R.string.bmi_overweight)
+            binding.txvResult.setTextColor(ContextCompat.getColor(this, R.color.overweight))
+        } else if(bmi < 34.9) {
+            binding.txvResult.setText(R.string.bmi_obesity)
+            binding.txvResult.setTextColor(ContextCompat.getColor(this, R.color.obesity))
         } else {
-            binding.txvResult.setText(R.string.bmi_above_weight)
-            binding.txvResult.setTextColor(ContextCompat.getColor(this, R.color.red))
+            binding.txvResult.setText(R.string.bmi_morbid_obesity)
+            binding.txvResult.setTextColor(ContextCompat.getColor(this, R.color.morbid_obesity))
         }
     }
 
@@ -60,10 +62,13 @@ class BmiResultActivity: AppCompatActivity() {
             startActivity( intent )
             finish()
         }
+        /*
         binding.btnOpenFragment.setOnClickListener {
             supportFragmentManager.beginTransaction()
-                .replace(R.id.fragment_container, EvenOrOddFragment()) // Substituir R.id.fragment_container pelo ID do contêiner do fragmento
+                .replace(R.id.fragment_container, EvenOrOddFragment())
                 .commit()
         }
+
+         */
     }
 }

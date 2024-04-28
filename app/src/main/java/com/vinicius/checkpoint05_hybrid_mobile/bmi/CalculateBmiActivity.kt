@@ -3,6 +3,8 @@ package com.vinicius.checkpoint05_hybrid_mobile.bmi
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat
+import com.vinicius.checkpoint05_hybrid_mobile.R
 import com.vinicius.checkpoint05_hybrid_mobile.databinding.ActivityBmiCalculateBinding
 
 class CalculateBmiActivity: AppCompatActivity() {
@@ -25,8 +27,11 @@ class CalculateBmiActivity: AppCompatActivity() {
             if(weight.isNotEmpty() && height.isNotEmpty()) {
                 intent.putExtra("weight", weight.toDouble())
                 intent.putExtra("height", height.toDouble())
+                startActivity( intent )
+            } else {
+                binding.txtInputLayoutWeight.boxStrokeColor = ContextCompat.getColor(this, R.color.morbid_obesity)
+                binding.txtInputLayoutHeight.boxStrokeColor = ContextCompat.getColor(this, R.color.morbid_obesity)
             }
-            startActivity( intent )
         }
         binding.btnReturnActivity.setOnClickListener {
             finish()

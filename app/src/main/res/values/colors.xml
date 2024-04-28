@@ -2,8 +2,15 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="red">#F44336</color>
-    <color name="green">#4CAF50</color>
-    <color name="blue">#00BCD4</color>
+
+    <!-- Activity BMI Result -->
+    <color name="under_weight">#A3BFD9</color>
+    <color name="ideal_weight">#99BF9F</color>
+    <color name="overweight">#F2CE1B</color>
+    <color name="obesity">#D99F59</color>
+    <color name="morbid_obesity">#BF4949</color>
+
+
+    <color name="blue2">#009688</color>
     <color name="backgrond_odd_or_even">#009688</color>
 </resources>

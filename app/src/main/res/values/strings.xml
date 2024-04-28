@@ -15,18 +15,19 @@
     <string name="btn_calculate">CALCULATE</string>
 
     <!-- Activity BMI Result -->
-    <string name="txv_weight_information">Seu Peso %1$s kg</string>
-    <string name="txv_height_information">Altura informada %1$s m</string>
-    <string name="txv_title_result">Resultado</string>
+    <string name="txv_weight_information">%1$skg - %2$sm</string>
+    <string name="txv_height_information">| %1$s M</string>
+    <string name="txv_title_result">Result</string>
     <string name="txv_result">Resultado</string>
 
     <!-- Activity Result -->
-    <string name="bmi_below_weight">Abaixo do peso</string>
-    <string name="bmi_ideal_weight">Peso Ideal</string>
-    <string name="bmi_above_weight">Acima do peso</string>
+    <string name="bmi_under_weight">Under Weight</string>
+    <string name="bmi_ideal_weight">Ideal Weight</string>
+    <string name="bmi_overweight">Overweight</string>
+    <string name="bmi_obesity">Obesity</string>
+    <string name="bmi_morbid_obesity">Morbid Obesity</string>
 
     <!-- Global Strings -->
     <string name="return_home">RETURN TO HOME</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
