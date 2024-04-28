@@ -2,6 +2,7 @@ package com.vinicius.checkpoint05_hybrid_mobile.bmi
 
 import android.content.Intent
 import android.os.Bundle
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import com.vinicius.checkpoint05_hybrid_mobile.R
@@ -31,6 +32,7 @@ class CalculateBmiActivity: AppCompatActivity() {
             } else {
                 binding.txtInputLayoutWeight.boxStrokeColor = ContextCompat.getColor(this, R.color.morbid_obesity)
                 binding.txtInputLayoutHeight.boxStrokeColor = ContextCompat.getColor(this, R.color.morbid_obesity)
+                Toast.makeText(this, "Preencha Todos os campos", Toast.LENGTH_LONG).show()
             }
         }
         binding.btnReturnActivity.setOnClickListener {
