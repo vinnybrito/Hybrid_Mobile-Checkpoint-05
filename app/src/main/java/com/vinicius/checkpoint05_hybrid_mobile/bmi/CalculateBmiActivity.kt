@@ -25,14 +25,16 @@ class CalculateBmiActivity: AppCompatActivity() {
             val weight = binding.editWeight.text.toString()
             val height = binding.editHeight.text.toString()
 
-            if(weight.isNotEmpty() && height.isNotEmpty()) {
+            if (weight.isNotEmpty() && height.isNotEmpty()) {
                 intent.putExtra("weight", weight.toDouble())
                 intent.putExtra("height", height.toDouble())
                 startActivity( intent )
             } else {
-                binding.txtInputLayoutWeight.boxStrokeColor = ContextCompat.getColor(this, R.color.morbid_obesity)
-                binding.txtInputLayoutHeight.boxStrokeColor = ContextCompat.getColor(this, R.color.morbid_obesity)
-                Toast.makeText(this, "Preencha Todos os campos", Toast.LENGTH_LONG).show()
+                binding.txtInputLayoutWeight.boxStrokeColor = ContextCompat
+                    .getColor(this, R.color.morbid_obesity)
+                binding.txtInputLayoutHeight.boxStrokeColor = ContextCompat
+                    .getColor(this, R.color.morbid_obesity)
+                Toast.makeText(this, "Preencha Todos os Campos", Toast.LENGTH_LONG).show()
             }
         }
         binding.btnReturnActivity.setOnClickListener {

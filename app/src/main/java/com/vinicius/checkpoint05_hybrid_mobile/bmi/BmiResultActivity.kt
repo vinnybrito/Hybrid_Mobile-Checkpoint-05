@@ -62,13 +62,11 @@ class BmiResultActivity: AppCompatActivity() {
             startActivity( intent )
             finish()
         }
-        /*
         binding.btnOpenFragment.setOnClickListener {
-            supportFragmentManager.beginTransaction()
-                .replace(R.id.fragment_container, EvenOrOddFragment())
+            supportFragmentManager
+                .beginTransaction()
+                .replace(R.id.fcv_menu_food, FoodMenuFragment())
                 .commit()
         }
-
-         */
     }
 }

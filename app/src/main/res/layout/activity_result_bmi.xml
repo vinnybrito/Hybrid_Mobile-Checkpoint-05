@@ -11,17 +11,18 @@
         android:id="@+id/imv_result_bmi"
         android:layout_width="0dp"
         android:layout_height="200dp"
-        android:layout_margin="30dp"
+        android:paddingTop="30dp"
         android:src="@drawable/weight_image"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/background_black"/>
 
     <TextView
         android:id="@+id/txv_title_result"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="16dp"
         android:text="@string/txv_title_result"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -34,8 +35,8 @@
         android:layout_height="wrap_content"
         android:text="@string/txv_weight_information"
         android:textSize="20sp"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/txv_title_result" />
 
 
@@ -43,8 +44,8 @@
         android:id="@+id/txv_result"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
         android:layout_marginStart="16dp"
+        android:layout_marginTop="14dp"
         android:layout_marginEnd="16dp"
         android:text="@string/txv_result"
         android:textAlignment="center"
@@ -62,6 +63,15 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/txv_result" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fcv_menu_food"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/background_black"
+        app:layout_constraintTop_toBottomOf="@id/btn_open_fragment" />
 
     <!--
     <androidx.fragment.app.FragmentContainerView

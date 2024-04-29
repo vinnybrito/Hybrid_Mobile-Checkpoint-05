@@ -2,6 +2,7 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="background_black">#1F1F1F</color>
 
     <!-- Activity BMI Result -->
     <color name="under_weight">#A3BFD9</color>
