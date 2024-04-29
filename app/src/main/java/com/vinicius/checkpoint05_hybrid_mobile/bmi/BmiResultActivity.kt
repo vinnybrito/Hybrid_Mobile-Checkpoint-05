@@ -7,6 +7,7 @@ import androidx.core.content.ContextCompat
 import com.vinicius.checkpoint05_hybrid_mobile.MainActivity
 import com.vinicius.checkpoint05_hybrid_mobile.R
 import com.vinicius.checkpoint05_hybrid_mobile.databinding.ActivityResultBmiBinding
+import com.vinicius.checkpoint05_hybrid_mobile.fragment.FoodMenuFragment
 
 class BmiResultActivity: AppCompatActivity() {
     private lateinit var binding: ActivityResultBmiBinding

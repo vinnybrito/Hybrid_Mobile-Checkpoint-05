@@ -11,12 +11,12 @@
         android:id="@+id/imv_result_bmi"
         android:layout_width="0dp"
         android:layout_height="200dp"
+        android:background="@color/background_black"
         android:paddingTop="30dp"
         android:src="@drawable/weight_image"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:background="@color/background_black"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/txv_title_result"
