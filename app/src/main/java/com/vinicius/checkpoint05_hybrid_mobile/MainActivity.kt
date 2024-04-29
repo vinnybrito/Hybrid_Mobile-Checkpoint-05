@@ -3,7 +3,7 @@ package com.vinicius.checkpoint05_hybrid_mobile
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.vinicius.checkpoint05_hybrid_mobile.bmi.CalculateBmiActivity
+import com.vinicius.checkpoint05_hybrid_mobile.bmiactivity.CalculateBmiActivity
 import com.vinicius.checkpoint05_hybrid_mobile.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {

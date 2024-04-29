@@ -1,4 +1,4 @@
-package com.vinicius.checkpoint05_hybrid_mobile.bmi
+package com.vinicius.checkpoint05_hybrid_mobile.bmiactivity
 
 import android.content.Intent
 import android.os.Bundle

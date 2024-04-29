@@ -13,10 +13,10 @@
         android:theme="@style/Theme.Checkpoint05_Hybrid_Mobile"
         tools:targetApi="31">
         <activity
-            android:name=".bmi.CalculateBmiActivity"
+            android:name=".bmiactivity.CalculateBmiActivity"
             android:exported="true" />
         <activity
-            android:name=".bmi.BmiResultActivity"
+            android:name=".bmiactivity.BmiResultActivity"
             android:exported="true" />
         <activity
             android:name=".MainActivity"

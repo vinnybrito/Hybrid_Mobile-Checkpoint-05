@@ -1,10 +1,8 @@
-package com.vinicius.checkpoint05_hybrid_mobile.bmi
+package com.vinicius.checkpoint05_hybrid_mobile.bmiactivity
 
-import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
-import com.vinicius.checkpoint05_hybrid_mobile.MainActivity
 import com.vinicius.checkpoint05_hybrid_mobile.R
 import com.vinicius.checkpoint05_hybrid_mobile.databinding.ActivityResultBmiBinding
 import com.vinicius.checkpoint05_hybrid_mobile.fragment.FoodMenuFragment
@@ -58,9 +56,11 @@ class BmiResultActivity: AppCompatActivity() {
 
     private fun setupListeners() {
         binding.btnReturnActivity.setOnClickListener {
+            /*
             val intent = Intent(this, MainActivity::class.java)
             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_NEW_TASK)
             startActivity( intent )
+             */
             finish()
         }
         binding.btnOpenFragment.setOnClickListener {
