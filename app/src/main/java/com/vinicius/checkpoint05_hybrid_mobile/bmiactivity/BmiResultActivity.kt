@@ -7,7 +7,7 @@ import com.vinicius.checkpoint05_hybrid_mobile.R
 import com.vinicius.checkpoint05_hybrid_mobile.databinding.ActivityResultBmiBinding
 import com.vinicius.checkpoint05_hybrid_mobile.fragment.FoodMenuFragment
 
-class BmiResultActivity: AppCompatActivity() {
+class BmiResultActivity : AppCompatActivity() {
     private lateinit var binding: ActivityResultBmiBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -34,7 +34,7 @@ class BmiResultActivity: AppCompatActivity() {
     }
 
     private fun calculateBmi(weight: Double, height: Double) {
-        val bmi = weight / ( height * height )
+        val bmi = weight / (height * height)
 
         if (bmi < 18.5) {
             binding.txvResult.setText(R.string.bmi_under_weight)
@@ -42,10 +42,10 @@ class BmiResultActivity: AppCompatActivity() {
         } else if (bmi < 24.9) {
             binding.txvResult.setText(R.string.bmi_ideal_weight)
             binding.txvResult.setTextColor(ContextCompat.getColor(this, R.color.ideal_weight))
-        } else if(bmi < 29.9) {
+        } else if (bmi < 29.9) {
             binding.txvResult.setText(R.string.bmi_overweight)
             binding.txvResult.setTextColor(ContextCompat.getColor(this, R.color.overweight))
-        } else if(bmi < 34.9) {
+        } else if (bmi < 34.9) {
             binding.txvResult.setText(R.string.bmi_obesity)
             binding.txvResult.setTextColor(ContextCompat.getColor(this, R.color.obesity))
         } else {

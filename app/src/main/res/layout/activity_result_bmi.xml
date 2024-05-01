@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".bmiactivity.BmiResultActivity">
+    android:layout_height="match_parent">
 
     <ImageView
         android:id="@+id/imv_result_bmi"
         android:layout_width="0dp"
         android:layout_height="230dp"
         android:background="@color/background_black"
+        android:contentDescription="@string/bmi_image_description"
         android:paddingTop="30dp"
         android:paddingBottom="30dp"
         android:src="@drawable/weight_image"
@@ -40,7 +40,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/txv_title_result" />
 
-
     <TextView
         android:id="@+id/txv_result"
         android:layout_width="0dp"
@@ -60,7 +59,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="OPEN FRAGMENT"
+        android:text="@string/btn_open_menu"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/txv_result" />
@@ -68,8 +67,9 @@
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/fcv_menu_food"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="0dp"
         android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="20dp"
         android:background="@drawable/rounded_background"
         app:layout_constraintBottom_toTopOf="@id/btn_return_activity"
         app:layout_constraintTop_toBottomOf="@id/btn_open_fragment" />
@@ -80,7 +80,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
         android:background="@drawable/btn_background"
-        android:text="@string/return_home"
+        android:text="@string/return_last_activity"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

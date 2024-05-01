@@ -2,7 +2,6 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="background_black">#1F1F1F</color>
 
     <!-- Activity BMI Result -->
     <color name="under_weight">#A3BFD9</color>
@@ -11,7 +10,7 @@
     <color name="obesity">#D99F59</color>
     <color name="morbid_obesity">#BF4949</color>
 
-    <color name="button_color">#F44336</color>
-    <color name="blue2">#009688</color>
-    <color name="backgrond_odd_or_even">#009688</color>
+    <!-- Fragment Food Item -->
+    <color name="background_black">#1F1F1F</color>
+    <color name="button_color">#009688</color>
 </resources>

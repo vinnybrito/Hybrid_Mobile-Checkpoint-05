@@ -4,8 +4,8 @@ import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.vinicius.appderestaurante.model.Food
 import com.vinicius.checkpoint05_hybrid_mobile.databinding.FoodItemBinding
+import com.vinicius.checkpoint05_hybrid_mobile.model.Food
 
 class FoodAdapter(
     private val context: Context,

@@ -3,33 +3,38 @@
 
     <!-- Activity Main -->
     <string name="btn_bmi_activity">Calculate Your BMI</string>
-    <string name="btn_even_or_odd_activity">Even or Odd</string>
-    <string name="btn_rock_paper_scissors">Rock, Paper, Scissors</string>
 
     <!-- Activity BMI Calculate -->
-    <string name="image_description">Balance BMI image</string>
+    <string name="image_description_bmi_calculate">Balance BMI image</string>
     <string name="title_bmi">Calculate your BMI</string>
     <string name="description_bmi">Enter the &quot;.&quot; for decimal places</string>
-    <string name="input_weight">Enter your weight</string>
-    <string name="input_height">Enter your height</string>
+    <string name="input_weight">Enter your weight (ex: 92.5)</string>
+    <string name="input_height">Enter your height (ex: 1.78)</string>
     <string name="btn_calculate">CALCULATE</string>
 
     <!-- Activity BMI Result -->
-    <string name="txv_weight_information">%1$skg - %2$sm</string>
-    <string name="txv_height_information">| %1$s M</string>
+    <string name="bmi_image_description">BMI results</string>
     <string name="txv_title_result">Result</string>
-    <string name="txv_result">Resultado</string>
+    <string name="txv_weight_information">%1$skg - %2$sm</string>
+    <string name="txv_result">Result</string>
+    <string name="btn_open_menu">OPEN MENU</string>
 
-    <!-- Activity Result -->
+    <!-- BMI Result Activity -->
     <string name="bmi_under_weight">Under Weight</string>
     <string name="bmi_ideal_weight">Ideal Weight</string>
     <string name="bmi_overweight">Overweight</string>
     <string name="bmi_obesity">Obesity</string>
     <string name="bmi_morbid_obesity">Morbid Obesity</string>
 
+    <!-- Food Item -->
+    <string name="image_description_food_item">Image of healthy dishes</string>
+    <string name="title_food_item">Salada I</string>
+    <string name="description_food_item">Salada, com cenoura, limão, grão de bico e pepino</string>
+    <string name="price_food_item">R$ 45.90</string>
     <string name="button_food_item">Add Card</string>
 
     <!-- Global Strings -->
-    <string name="return_home">RETURN TO HOME</string>
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="return_last_activity">RETURN</string>
+    <string name="close_fragment">CLOSE</string>
+
 </resources>
