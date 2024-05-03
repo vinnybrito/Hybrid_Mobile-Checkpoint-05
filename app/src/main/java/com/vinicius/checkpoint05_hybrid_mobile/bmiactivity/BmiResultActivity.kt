@@ -56,11 +56,6 @@ class BmiResultActivity : AppCompatActivity() {
 
     private fun setupListeners() {
         binding.btnReturnActivity.setOnClickListener {
-            /*
-            val intent = Intent(this, MainActivity::class.java)
-            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_NEW_TASK)
-            startActivity( intent )
-             */
             finish()
         }
         binding.btnOpenFragment.setOnClickListener {

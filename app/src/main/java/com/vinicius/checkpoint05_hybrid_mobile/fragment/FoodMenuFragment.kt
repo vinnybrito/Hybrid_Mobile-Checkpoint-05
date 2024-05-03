@@ -81,7 +81,6 @@ class FoodMenuFragment : Fragment() {
             price = "R$40.20"
         )
         foodList.add(food5)
-
     }
 
 }
